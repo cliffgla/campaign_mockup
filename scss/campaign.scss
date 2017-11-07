@@ -1,16 +1,41 @@
-$primary-text-color: eee;
+$primary-color: #008847;
+$primary-text-color: #eee;
+$headline-font: serif;
 
-h1 {
+
+
+
+a {
     color: $primary-text-color;
 }
 
+.navbar {
+    background-color: $primary-color;
+    border-bottom: solid white 1px;
+}
 
 .jumbotron {
-    min-height: 350px;
+    // min-height: 350px;
     padding-top: 3em;
     background-image: url("../img/jumbo.jpg");
     background-size: cover;
-    background-position: 0% 30%;
+    background-position: 0% 40%;
+}
 
+.jumbotron h1 {
+    margin-top: .5em;
+    font-family: $headline-font;
+    color: $primary-text-color;
 
+}
+
+#jumbo-lead {
+    color: $primary-text-color;
+}
+
+@media (min-width:768px) {
+
+    .jumbotron {
+        background-position: 60%;
+    }
 }
