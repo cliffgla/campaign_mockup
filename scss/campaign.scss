@@ -17,9 +17,11 @@ a {
 .jumbotron {
     // min-height: 350px;
     padding-top: 3em;
-    background-image: url("../img/jumbo.jpg");
+    background: linear-gradient(black, white 55%), url("../img/jumbo.jpg");
+    background-blend-mode: multiply;
     background-size: cover;
     background-position: 0% 40%;
+    min-height: 300px;
 }
 
 .jumbotron h1 {
@@ -29,13 +31,24 @@ a {
 
 }
 
+#jumbo-head {
+
+}
+
 #jumbo-lead {
     color: $primary-text-color;
 }
 
+//media queries
 @media (min-width:768px) {
 
     .jumbotron {
+
+        background: linear-gradient(black, white 65%), url("../img/jumbo.jpg");
+        background-size: cover;
         background-position: 60%;
+
     }
+
+
 }
