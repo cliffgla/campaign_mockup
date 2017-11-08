@@ -19,11 +19,10 @@ a {
   background-size: cover;
   background-position: 0% 40%;
   min-height: 300px; }
-
-.jumbotron h1 {
-  margin-top: .5em;
-  font-family: serif;
-  color: #eee; }
+  .jumbotron h1 {
+    margin-top: .5em;
+    font-family: serif;
+    color: #eee; }
 
 #jumbo-lead {
   color: #eee; }
@@ -35,18 +34,25 @@ a {
   text-align: center;
   border-radius: 5px; }
   .issues-card h1 {
-    font-family: serif; }
+    font-family: serif;
+    text-align: center; }
   .issues-card img {
     margin-left: auto;
     margin-right: auto;
     width: 80%; }
-  .issues-card button {
+  .issues-card p {
+    padding-bottom: 50px;
+    text-align: center; }
+  .issues-card .join-button {
     margin-bottom: 1em;
-    border: none;
-    text-align: center;
     background-color: #ffc107;
     border-radius: 5px;
-    padding: .5em 1em; }
+    padding: .5em 1em;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
 
 @media (min-width: 768px) {
   .nav {

@@ -16,8 +16,6 @@ $banner-color: #ffc107;
 
 @mixin btn {
     margin-bottom: 1em;
-    border: none;
-    text-align: center;
     background-color: $banner-color;
     border-radius: 5px;
     padding: .5em 1em;
@@ -35,7 +33,6 @@ a {
 }
 
 
-
 // Components
 .navbar {
     background-color: $primary-color;
@@ -43,56 +40,56 @@ a {
 }
 
 .jumbotron {
-    // min-height: 350px;
     padding-top: 3em;
     background: linear-gradient(black, white 55%), url("../img/jumbo.jpg");
     background-blend-mode: multiply;
     background-size: cover;
     background-position: 0% 40%;
     min-height: 300px;
+    h1 {
+        margin-top: .5em;
+        font-family: $headline-font;
+        color: $primary-text-color;
+
+    }
 }
-
-.jumbotron h1 {
-    margin-top: .5em;
-    font-family: $headline-font;
-    color: $primary-text-color;
-
-}
-
 
 #jumbo-lead {
     color: $primary-text-color;
 }
 
 .issues-card {
-    // background: url("../img/football.jpg");
     padding-top: 1em;
     margin-bottom: 1em;
-    // margin-right: ;
     background-color: white;
-    text-align:center;
+    text-align: center;
     border-radius: 5px;
     h1 {
         font-family: $headline-font;
+        text-align: center;
     }
-    p {
-        // background-color: $banner-color;
-        
-
-    }
-
 
     img {
         @include center;
         width: 80%;
     }
-
-    button {
-        @include btn;
-
+    p {
+        padding-bottom: 50px;
+        text-align: center;
     }
 
+    .join-button {
+        @include btn;
+        position: absolute;
+        bottom:0;
+        text-align:center;
+        @include center;
+        
+    }
+
+
 }
+
 
 //media queries
 @media (min-width:768px) {
