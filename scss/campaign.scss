@@ -1,3 +1,4 @@
+// Variables
 $primary-color: #008847;
 $primary-text-color: #eee;
 $headline-font: serif;
@@ -5,7 +6,26 @@ $primary-color-light: lighten($primary-color, 25%);
 $transparent-primary-color-light: transparentize($primary-color-light, .67);
 $banner-color: #ffc107;
 
+// Mixins
 
+@mixin center {
+    margin-left: auto;
+    margin-right: auto;
+    @content;
+}
+
+@mixin btn {
+    margin-bottom: 1em;
+    border: none;
+    text-align: center;
+    background-color: $banner-color;
+    border-radius: 5px;
+    padding: .5em 1em;
+}
+// Base Styles
+.nav {
+    @include center;
+}
 body {
     background-color: $primary-color;
 }
@@ -14,6 +34,9 @@ a {
     color: $primary-text-color;
 }
 
+
+
+// Components
 .navbar {
     background-color: $primary-color;
     border-bottom: solid white 1px;
@@ -36,25 +59,37 @@ a {
 
 }
 
-#jumbo-head {
-
-}
 
 #jumbo-lead {
     color: $primary-text-color;
 }
 
-#identity {
-    background: url("../img/football.jpg");
-    background-blend-mode: multiply;
-    background-size: cover;
-    background-position: 60%;
-    min-height: 300px;
+.issues-card {
+    // background: url("../img/football.jpg");
+    padding-top: 1em;
+    margin-bottom: 1em;
+    // margin-right: ;
+    background-color: white;
+    text-align:center;
+    border-radius: 5px;
     h1 {
-        font-family: $headline-font; 
+        font-family: $headline-font;
     }
     p {
-        background-color: $banner-color;
+        // background-color: $banner-color;
+        
+
+    }
+
+
+    img {
+        @include center;
+        width: 80%;
+    }
+
+    button {
+        @include btn;
+
     }
 
 }
@@ -62,11 +97,21 @@ a {
 //media queries
 @media (min-width:768px) {
 
+    .nav {
+        margin-left: 0;
+    }
     .jumbotron {
         background: linear-gradient(black, white 55%), url("../img/jumbo.jpg");
         background-size: cover;
         background-position: 60%;
     }
 
+    .issues-card {
+        img {
+            display: block;
+            width: 80%;
+            @include center;
+        }
+    }
 
 }

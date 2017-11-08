@@ -1,3 +1,7 @@
+.nav {
+  margin-left: auto;
+  margin-right: auto; }
+
 body {
   background-color: #008847; }
 
@@ -24,21 +28,39 @@ a {
 #jumbo-lead {
   color: #eee; }
 
-#identity {
-  background: url("../img/football.jpg");
-  background-blend-mode: multiply;
-  background-size: cover;
-  background-position: 60%;
-  min-height: 300px; }
-  #identity h1 {
+.issues-card {
+  padding-top: 1em;
+  margin-bottom: 1em;
+  background-color: white;
+  text-align: center;
+  border-radius: 5px; }
+  .issues-card h1 {
     font-family: serif; }
-  #identity p {
-    background-color: #ffc107; }
+  .issues-card img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; }
+  .issues-card button {
+    margin-bottom: 1em;
+    border: none;
+    text-align: center;
+    background-color: #ffc107;
+    border-radius: 5px;
+    padding: .5em 1em; }
 
 @media (min-width: 768px) {
+  .nav {
+    margin-left: 0; }
+
   .jumbotron {
     background: linear-gradient(black, white 55%), url("../img/jumbo.jpg");
     background-size: cover;
-    background-position: 60%; } }
+    background-position: 60%; }
+
+  .issues-card img {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; } }
 
 /*# sourceMappingURL=campaign.css.map */
