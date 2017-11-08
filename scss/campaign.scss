@@ -1,9 +1,14 @@
 $primary-color: #008847;
 $primary-text-color: #eee;
 $headline-font: serif;
+$primary-color-light: lighten($primary-color, 25%);
+$transparent-primary-color-light: transparentize($primary-color-light, .67);
+$banner-color: #ffc107;
 
 
-
+body {
+    background-color: $primary-color;
+}
 
 a {
     color: $primary-text-color;
@@ -39,15 +44,28 @@ a {
     color: $primary-text-color;
 }
 
+#identity {
+    background: url("../img/football.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: 60%;
+    min-height: 300px;
+    h1 {
+        font-family: $headline-font; 
+    }
+    p {
+        background-color: $banner-color;
+    }
+
+}
+
 //media queries
 @media (min-width:768px) {
 
     .jumbotron {
-
         background: linear-gradient(black, white 55%), url("../img/jumbo.jpg");
         background-size: cover;
         background-position: 60%;
-
     }
 
 
