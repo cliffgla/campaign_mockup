@@ -8,9 +8,16 @@ body {
 a {
   color: #eee; }
 
+footer {
+  background-color: #c8c8c8;
+  min-height: 150px;
+  border-top: solid white 2xpx; }
+
 .navbar {
   background-color: #008847;
   border-bottom: solid white 1px; }
+  .navbar #dropdown-text {
+    color: white; }
 
 .jumbotron {
   padding-top: 3em;
@@ -41,18 +48,13 @@ a {
     margin-right: auto;
     width: 80%; }
   .issues-card p {
-    padding-bottom: 50px;
     text-align: center; }
-  .issues-card .join-button {
+  .issues-card .issues-button {
     margin-bottom: 1em;
     background-color: #ffc107;
     border-radius: 5px;
     padding: .5em 1em;
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto; }
+    bottom: 0; }
 
 @media (min-width: 768px) {
   .nav {

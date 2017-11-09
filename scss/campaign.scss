@@ -19,6 +19,7 @@ $banner-color: #ffc107;
     background-color: $banner-color;
     border-radius: 5px;
     padding: .5em 1em;
+    @content;
 }
 // Base Styles
 .nav {
@@ -33,10 +34,24 @@ a {
 }
 
 
+
+
+footer {
+    background-color:rgb(200,200,200);
+    min-height: 150px;
+    border-top: solid white 2xpx;
+
+}
+
 // Components
 .navbar {
     background-color: $primary-color;
     border-bottom: solid white 1px;
+    #dropdown-text {
+        color: white;
+
+        // background-color: $primary-color-light;
+    }
 }
 
 .jumbotron {
@@ -74,18 +89,23 @@ a {
         width: 80%;
     }
     p {
-        padding-bottom: 50px;
+        // padding-bottom: 50px;
         text-align: center;
     }
 
-    .join-button {
+    .issues-button {
         @include btn;
-        position: absolute;
+        // position: absolute;
         bottom:0;
-        text-align:center;
-        @include center;
-        
+        // left:0;
+        // display: inline-block;
+        // width: 100%;
+        // margin-left:auto;
+        // margin-right:auto;
+        // text-align: center;
     }
+
+
 
 
 }
