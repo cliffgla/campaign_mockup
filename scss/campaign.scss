@@ -27,7 +27,7 @@ $footer-color: rgb(200,200,200);
     @include center;
 }
 body {
-    background-color: $primary-color;
+    background-color: $footer-color;
 
 
 }
@@ -40,9 +40,7 @@ a {
 
 
 footer {
-    background-color: $footer-color;
     min-height: 150px;
-    border-top: solid white 2px;
     min-height: 125px;;
     h1 {
         font-family: $headline-font;
@@ -75,6 +73,7 @@ footer {
 
 .jumbotron {
     padding-top: 3em;
+    margin-bottom: 0;
     background: linear-gradient(black, white 55%), url("../img/jumbo.jpg");
     background-blend-mode: multiply;
     background-size: cover;
@@ -92,8 +91,14 @@ footer {
     color: $primary-text-color;
 }
 
+#issues-row {
+    background-color: $primary-color;
+    padding-top: .5em;
+
+}
 .issues-card {
     padding-top: 1em;
+    margin-top: 1em;
     margin-bottom: 1em;
     background-color: white;
     text-align: center;

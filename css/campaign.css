@@ -3,15 +3,13 @@
   margin-right: auto; }
 
 body {
-  background-color: #008847; }
+  background-color: #c8c8c8; }
 
 a {
   color: #eee; }
 
 footer {
-  background-color: #c8c8c8;
   min-height: 150px;
-  border-top: solid white 2px;
   min-height: 125px; }
   footer h1 {
     font-family: serif; }
@@ -30,6 +28,7 @@ footer {
 
 .jumbotron {
   padding-top: 3em;
+  margin-bottom: 0;
   background: linear-gradient(black, white 55%), url("../img/jumbo.jpg");
   background-blend-mode: multiply;
   background-size: cover;
@@ -43,8 +42,13 @@ footer {
 #jumbo-lead {
   color: #eee; }
 
+#issues-row {
+  background-color: #008847;
+  padding-top: .5em; }
+
 .issues-card {
   padding-top: 1em;
+  margin-top: 1em;
   margin-bottom: 1em;
   background-color: white;
   text-align: center;
