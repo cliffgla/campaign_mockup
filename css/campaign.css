@@ -11,7 +11,16 @@ a {
 footer {
   background-color: #c8c8c8;
   min-height: 150px;
-  border-top: solid white 2xpx; }
+  border-top: solid white 2xpx;
+  margin-bottom: 0; }
+  footer h1 {
+    font-family: serif; }
+  footer a {
+    display: block; }
+  footer p {
+    text-align: center;
+    margin-top: 1em;
+    padding-bottom: 2em; }
 
 .navbar {
   background-color: #008847;
@@ -55,6 +64,10 @@ footer {
     border-radius: 5px;
     padding: .5em 1em;
     bottom: 0; }
+
+#footer-mail {
+  border: solid black 1px;
+  padding-bottom: 5px; }
 
 @media (min-width: 768px) {
   .nav {

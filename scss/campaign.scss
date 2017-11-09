@@ -5,6 +5,7 @@ $headline-font: serif;
 $primary-color-light: lighten($primary-color, 25%);
 $transparent-primary-color-light: transparentize($primary-color-light, .67);
 $banner-color: #ffc107;
+$footer-color: rgb(200,200,200);
 
 // Mixins
 
@@ -37,11 +38,28 @@ a {
 
 
 footer {
-    background-color:rgb(200,200,200);
+    background-color: $footer-color;
     min-height: 150px;
     border-top: solid white 2xpx;
+    h1 {
+        font-family: $headline-font;
+    }
+    margin-bottom: 0;
 
+    a {
+        display: block;
+    }
+    p {
+        text-align: center;
+        margin-top: 1em;
+        padding-bottom: 2em;
+    }
 }
+
+
+
+
+
 
 // Components
 .navbar {
@@ -104,9 +122,11 @@ footer {
         // margin-right:auto;
         // text-align: center;
     }
+}
 
-
-
+#footer-mail {
+    border: solid black 1px;
+    padding-bottom: 5px;
 
 }
 
